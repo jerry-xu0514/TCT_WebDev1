@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home Page (The Coding Team)</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+    <style>
+      body {
+      text-align:center;
+      font-family: 'Dongle', sans-serif;
+    }
+    
+    #explanation {
+      background-color:antiquewhite;
+    }
+    
+    .buttons {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      width:120px;
+      height:60px;
+      font-size:15px;
+    }
+    
+    input[type=text], select, textarea {
+      width: 100%; 
+      padding: 12px; 
+      border: 1px solid #ccc; 
+      border-radius: 4px; 
+      box-sizing: border-box; 
+      margin-top: 6px; 
+      margin-bottom: 16px; 
+      resize: vertical 
+    }
+    
+    input[type=submit] {
+      background-color: #207ce3;
+      color: white;
+      padding: 12px 20px;
+      border: dashed;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover{
+      background-color: #207c94;
+      transition: 2s;
+    }
+    
+    .page {
+      border-radius: 7px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    #submit {
+      background-color: #207ce3;
+      color: white;
+      padding: 12px 20px;
+      border: solid;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+    
+    #submit:hover {
+      background-color: #207c94;
+      transition: 2s;
+    }
+    
+    #pageOne {
+      display:block;
+    }
+    
+    #pageTwo {
+      display:none;
+    }
+    </style>
+  </head>
+  
+  <body>
+    <h1>Welcome, this is our main website</h1>
+
+    <h2>We are The Coding Team</h2>
+
+
+    <div id="bottom">
+      <a href='https://home-page.hebisann10.repl.co/'><button class="buttons">HOME PAGE</button></a>
+      <a href='https://blog-page.hebisann10.repl.co/'><button class="buttons">Blog page</button></a>
+      <a href='https://team-page.hebisann10.repl.co/'><button class="buttons">Team page</button></a>
+      <a href='https://faq-page.hebisann10.repl.co/'><button class="buttons">FAQ page</button></a>
+      <a href='https://contact-page.hebisann10.repl.co/'><button class="buttons">Contact page</button></a>
+    </div>
+    
+    <div id="explanation">
+      <div>
+        <h1>Our app is...</h1>
+        <h2>Here is an example...</h2>
+
+        <h2>Here are some features</h2>
+
+        <h2>Some pictures...</h2>
+
+        <h2>Some more examples...</h2>
+
+      </div>
+    </div>
+
+    
+    <div id="pageOne">
+      <h2>Contact form</h2>
+  
+      <h3>Name</h3>
+      <input type="text" id="name" placeholder="Your name: ">
+  
+      <h3>Email</h3>
+      <input type="text" id="email" placeholder="Your email: ">
+  
+      <h3>Subject</h3>
+      <textarea id="subject" placeholder="Write..." style="height:200px"></textarea>
+      <button id="submit" onclick="submitted()" type="submit">Submit</button>
+  
+      </form>
+    </div>
+    
+    <div id="pageTwo">
+      <h3>Thank you very much for contacting us!</h3>
+      <button onclick="return()">Return</button>
+    </div>
+
+    <script>
+      var Name = document.getElementById("name");
+      var Email = document.getElementById("email");
+      var Subject = document.getElementById("subject");
+      
+      function info(name, email, subject) {
+        var returnObject = {
+          name: name.value,
+          subject: subject.value,
+          email: email.value
+        }
+        return returnObject
+      }
+      
+      function submitted() {
+        var infoReturnedObject = info(Name, Email, Subject)
+        console.log("Your name is: " + infoReturnedObject.name)
+        console.log("Your e-mail is: " + infoReturnedObject.email)
+        console.log("The issue is: " + infoReturnedObject.subject)
+        document.getElementById('pageOne').style.display = 'none';
+        document.getElementById('pageTwo').style.display = 'block';
+      }
+      
+      function return() {
+        document.getElementById('pageOne').style.display = 'block';
+        document.getElementById('pageTwo').style.display = 'none';
+      }
+    </script>
+
+    
+  </body>
+</html>
