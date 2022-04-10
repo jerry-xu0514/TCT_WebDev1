@@ -3,35 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Contact Page</title>
-<link rel="stylesheet" href="style.css">
+    <title>Contact - The Coding Team</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <h2>Contact form</h2>
+    <h2>Contact Form</h2>
     
-    <div id="bottom">
-      <a href='https://home-page.hebisann10.repl.co/'><button class="buttons">HOME PAGE</button></a>
-      <a href='Blog.html'><button class="buttons">Blog page</button></a>
-      <a href='Websites/Team.html'><button class="buttons">Team page</button></a>
-      <a href='Websites/FAQ.html'><button class="buttons">FAQ page</button></a>
-      <a href='Websites/Contact.html'><button class="buttons">Contact page</button></a>
+    <div id="panel">
+      <a href='Home.html'><button class="buttons">Home</button></a>
+      <a href='Blog.html'><button class="buttons">Blog</button></a>
+      <a href='Team.html'><button class="buttons">Team</button></a>
+      <a href='FAQ.html'><button class="buttons">FAQ's</button></a>
+      <a href='Contact.html'><button class="buttons">Contact</button></a>
     </div>
 
-    <div class="pageOne">
+    <div id="contact_form">
+  
+      <input type="text" id="name" placeholder="Name: ">
       
-      <form action="action_page.php">
-      <h3>Name</h3>
-      <input type="text" id="name" placeholder="Your name: ">
+      <input type="text" id="email" placeholder="Email: ">
 
-      <h3>Email</h3>
-      <input type="text" id="email" placeholder="Your email: ">
+      <textarea id="subject" placeholder="Write... " style="height:200px"></textarea>
+      
+      <button id="submit" onclick="submitted()" type="submit">Submit</button>
+  
+      </form>
+    </div>
 
-      <h3>Subject</h3>
-      <textarea id="subject" placeholder="Write..." style="height:200px"></textarea>
-      <button onclick="buttonClick()" type="submit">Submit</button>
-    </form>
-  </div>
   <div class="pageTwo">
     <h3>Thank you very much for taking this survey!</h3>
   </div>

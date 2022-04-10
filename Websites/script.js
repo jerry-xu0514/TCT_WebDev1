@@ -20,7 +20,7 @@ function submitted() {
   document.getElementById('pageTwo').style.display = 'block';
 }
 
-function return() {
+function back() {
   document.getElementById('pageOne').style.display = 'block';
   document.getElementById('pageTwo').style.display = 'none';
 }

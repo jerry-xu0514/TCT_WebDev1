@@ -1,10 +1,10 @@
 body {
   text-align:center;
-  font-family: 'Dongle', sans-serif;
+  font-family: sans-serif;
 }
 
 #explanation {
-  background-color:antiquewhite;
+  background-color:#f0f0f0;
 }
 
 .buttons {
@@ -20,6 +20,8 @@ body {
 }
 
 input[type=text], select, textarea {
+  font-family: 'Dongle', sans-serif;
+  font-size: 24px;
   width: 100%; 
   padding: 12px; 
   border: 1px solid #ccc; 
@@ -64,7 +66,7 @@ input[type=submit]:hover{
   transition: 2s;
 }
 
-#pageOne {
+#contact_form {
   display:block;
 }
 
@@ -74,7 +76,7 @@ input[type=submit]:hover{
 
       
 #team {
-      background-color: antiquewhite;
+      background-color: #f0f0f0;
         
       }
       
@@ -99,8 +101,6 @@ input[type=submit]:hover{
   height:60px;
   font-size:15px;
 }
-/* 
-Blog */
 
 body {
   text-align:center;
@@ -142,7 +142,7 @@ h2{
 }
 
 button {
-  background-color:antiquewhite;
+  background-color:#f0f0f0;
   border-radius:14px;
   height:35px;
   width:90px;
@@ -177,10 +177,42 @@ body {
 }
 
 #FAQ {
-  background-color:antiquewhite;
+  background-color:#f0f0f0;
   
 }
 
 .question {
   font-size:40;
+}
+
+body {
+  text-align:center;
+}
+
+#team {
+  background-color: #ffffff;
+  
+}
+
+.blog_post, .profile {
+  border:4px solid #808080;
+  width:360px;
+  height:250px;
+  margin:24px;
+  background-color:#f0f0f0;
+  border-radius:16px;
+  display: inline-block;
+  padding: 24px;
+}
+
+.buttons {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  width:120px;
+  height:60px;
+  font-size:15px;
 }

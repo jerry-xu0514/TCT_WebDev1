@@ -3,26 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Home Page (The Coding Team)</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Home Page - The Coding Team</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
   </head>
   
   <body>
-    <h1>Welcome, this is our main website</h1>
+    <h1>Welcome!</h1>
 
-    <h2>We are The Coding Team</h2>
+    <h2>We are the Coding Team.</h2>
 
-
-    <div id="bottom">
-      <a href='https://home-page.hebisann10.repl.co/'><button class="buttons">HOME PAGE</button></a>
-      <a href='Websites/Blog.html'><button class="buttons">Blog page</button></a>
-      <a href='Websites/Team.html'><button class="buttons">Team page</button></a>
-      <a href='Websites/FAQ.html'><button class="buttons">FAQ page</button></a>
-      <a href='Websites/Contact.html'><button class="buttons">Contact page</button></a>
+    <div id="panel">
+      <a href='Home.html'><button class="buttons">Home</button></a>
+      <a href='Blog.html'><button class="buttons">Blog</button></a>
+      <a href='Team.html'><button class="buttons">Team</button></a>
+      <a href='FAQ.html'><button class="buttons">FAQ's</button></a>
+      <a href='Contact.html'><button class="buttons">Contact</button></a>
     </div>
     
     <div id="explanation">
@@ -39,26 +37,10 @@
       </div>
     </div>
 
-    
-    <div id="pageOne">
-      <h2>Contact form</h2>
-  
-      <h3>Name</h3>
-      <input type="text" id="name" placeholder="Your name: ">
-  
-      <h3>Email</h3>
-      <input type="text" id="email" placeholder="Your email: ">
-  
-      <h3>Subject</h3>
-      <textarea id="subject" placeholder="Write..." style="height:200px"></textarea>
-      <button id="submit" onclick="submitted()" type="submit">Submit</button>
-  
-      </form>
-    </div>
-    
+
     <div id="pageTwo">
       <h3>Thank you very much for contacting us!</h3>
-      <button onclick="return()">Return</button>
+      <button onclick="back()">Return</button>
     </div>
 
     <script>
@@ -84,7 +66,7 @@
         document.getElementById('pageTwo').style.display = 'block';
       }
       
-      function return() {
+      function back() {
         document.getElementById('pageOne').style.display = 'block';
         document.getElementById('pageTwo').style.display = 'none';
       }
