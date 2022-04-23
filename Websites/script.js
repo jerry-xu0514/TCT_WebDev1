@@ -24,3 +24,8 @@ function back() {
   document.getElementById('pageOne').style.display = 'block';
   document.getElementById('pageTwo').style.display = 'none';
 }
+
+function findSpace() {
+  let height = panel.height;
+  return height;
+}

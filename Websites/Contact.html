@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Contact - The Coding Team</title>
+    <title>Contact Page - The Coding Team</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  
   <body>
 
-    <h2>Contact Form</h2>
-    
+
     <div id="panel">
+      <a href='Home.html'><button class="buttons"><img src="Websites/tct_logo(lg).PNG"/></button></a>
       <a href='Home.html'><button class="buttons">Home</button></a>
       <a href='Blog.html'><button class="buttons">Blog</button></a>
       <a href='Team.html'><button class="buttons">Team</button></a>
@@ -18,21 +19,18 @@
       <a href='Contact.html'><button class="buttons">Contact</button></a>
     </div>
 
-    <div id="contact_form">
-  
-      <input type="text" id="name" placeholder="Name: ">
-      
-      <input type="text" id="email" placeholder="Email: ">
+    <h1 class = "banner">Contact Form</h1>
 
+    <div id="contact_form">
+      <input type="text" id="name" placeholder="Name: ">
+      <input type="text" id="email" placeholder="Email: ">
       <textarea id="subject" placeholder="Write... " style="height:200px"></textarea>
-      
       <button id="submit" onclick="submitted()" type="submit">Submit</button>
-  
       </form>
     </div>
 
   <div class="pageTwo">
-    <h3>Thank you very much for taking this survey!</h3>
+    <h3>Thank you for messaging us!</h3>
   </div>
     <script src="script.js"></script>
   </body>
