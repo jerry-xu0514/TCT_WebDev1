@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width">
     <title>Contact Page - The Coding Team</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
   </head>
-  
+
   <body>
 
-
     <div id="panel">
-      <a href='Home.html'><button class="buttons"><img src="Websites/tct_logo(lg).PNG"/></button></a>
-      <a href='Home.html'><button class="buttons">Home</button></a>
-      <a href='Blog.html'><button class="buttons">Blog</button></a>
-      <a href='Team.html'><button class="buttons">Team</button></a>
-      <a href='FAQ.html'><button class="buttons">FAQ's</button></a>
-      <a href='Contact.html'><button class="buttons">Contact</button></a>
+      <a href='Home.html'><button class="buttons"><img src="./shieldcoder.png" height="55.44px" width="47.52 px"/></button></a>
+      <a href='Home.html'><button class="buttons"><b>Home</b></button></a>
+      <a href='Blog.html'><button class="buttons"><b>Blog</b></button></a>
+      <a href='Team.html'><button class="buttons"><b>Team</b></button></a>
+      <a href='FAQ.html'><button class="buttons"><b>FAQs</b></button></a>
+      <a href='Contact.html'><button class="buttons blue"><b>Contact</b></button></a>
     </div>
 
     <h1 class = "banner">Contact Form</h1>
@@ -24,15 +24,14 @@
     <div id="contact_form">
       <input type="text" id="name" placeholder="Name: ">
       <input type="text" id="email" placeholder="Email: ">
-      <textarea id="subject" placeholder="Write... " style="height:200px"></textarea>
-      <button id="submit" onclick="submitted()" type="submit">Submit</button>
+      <textarea id="message" placeholder="Write... " style="height:200px"></textarea>
       </form>
     </div>
+    <button id="submit" onclick="submit();">Submit</button>
 
-  <div class="pageTwo">
-    <h3>Thank you for messaging us!</h3>
-  </div>
-    <script src="script.js"></script>
+    <div class="pageTwo">
+      <h3>Thank you for messaging us!</h3>
+    </div>
   </body>
 </html>
 

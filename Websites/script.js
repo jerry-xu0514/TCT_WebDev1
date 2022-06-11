@@ -1,31 +1,40 @@
-var Name = document.getElementById("name");
-var Email = document.getElementById("email");
-var Subject = document.getElementById("subject");
+function submitEmail() {
+  var emailName = getElementById("name").value;
+  var emailAddress = getElementById("email").value;
+  var emailMessage = getElementById("subject").innerText;
+  window.location.href = "mailto:emailName?subject=Feedback%20for%20TCT&body="+encodeURIComponent(emailMessage);
+}
 
-function info(name, email, subject) {
-  var returnObject = {
-    name: name.value,
-    subject: subject.value,
-    email: email.value
+
+window.onscroll = function() {myFunction()};
+var panel = document.getElementById("panel");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    panel.classList.add("sticky");
+  } else {
+    panel.classList.remove("sticky");
   }
-  return returnObject
 }
 
-function submitted() {
-  var infoReturnedObject = info(Name, Email, Subject)
-  console.log("Your name is: " + infoReturnedObject.name)
-  console.log("Your e-mail is: " + infoReturnedObject.email)
-  console.log("The issue is: " + infoReturnedObject.subject)
-  document.getElementById('pageOne').style.display = 'none';
-  document.getElementById('pageTwo').style.display = 'block';
-}
+function openEmail() {
+  window.open('mailto:timothymoon08@gmail.com');
+} 
 
-function back() {
-  document.getElementById('pageOne').style.display = 'block';
-  document.getElementById('pageTwo').style.display = 'none';
-}
+function submit(){
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
 
-function findSpace() {
-  let height = panel.height;
-  return height;
+  if (name.trim() == "" || email.trim() == "" || message.trim() == "") {
+      //handle exception, prompt user
+  }
+
+  name    = encodeURIComponent(name);
+  email   = encodeURIComponent(email);
+  message = encodeURIComponent(message);
+
+  //%0A is the replacement of \n in link
+  window.open("mailto:shieldcoder.team@gmail.com?subject=Feedback&body=Hello,%0A"+message+"%0Amy email: "+email+"%0A%0AThank%20you,%0A"+name);
 }

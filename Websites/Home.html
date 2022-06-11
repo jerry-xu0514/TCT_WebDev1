@@ -10,65 +10,53 @@
   <body>
 
     <div id="panel">
-      <a href='Home.html'><button class="buttons"><img src="Websites/tct_logo(lg).PNG"/></button></a>
-      <a href='Home.html'><button class="buttons">Home</button></a>
-      <a href='Blog.html'><button class="buttons">Blog</button></a>
-      <a href='Team.html'><button class="buttons">Team</button></a>
-      <a href='FAQ.html'><button class="buttons">FAQ's</button></a>
-      <a href='Contact.html'><button class="buttons">Contact</button></a>
+      <a href='Home.html'><button class="buttons"><img src="./shieldcoder.png" height="55.44px" width="47.52 px"/></button></a>
+      <a href='Home.html'><button class="buttons blue"><b>Home</b></button></a>
+      <a href='Blog.html'><button class="buttons"><b>Blog</b></button></a>
+      <a href='Team.html'><button class="buttons"><b>Team</b></button></a>
+      <a href='FAQ.html'><button class="buttons"><b>FAQs</b></button></a>
+      <a href='Contact.html'><button class="buttons"><b>Contact</b></button></a>
     </div>
     
-    <h1 class = "banner">Welcome to the Coding Team!</h1>
+    <h1 class = "banner">Welcome to the Team!</h1>
+   
 
     <div id="explanation">
-      <div>
-        <h2>Our app is...</h2>
-        <h2>Here is an example...</h2>
 
-        <h2>Here are some features</h2>
+      <image src="blue_light_logo(7).png" classes="align-left" width="300px" height="300px" />
 
-        <h2>Some pictures...</h2>
+      <h2><b>Our Project</b> is Elarm, a mobile security app.</h2>
 
-        <h2>Some more examples...</h2>
+      <h2>It allows you to:</h2>
 
-      </div>
+      <h2>• Call 911 with one button</h2>
+
+      <h2>• Send tracking info to friends when in danger</h2>
+
+      <h2>• Activate routine check-ins to ensure safety </h2>
+    
+      <hr style="height:5px; width:80%; border-width:0; color: #404040; background-color:#404040">
+
+      <h2><b>The Problem</b> we are trying to solve is human trafficking.</h2>
+
+      <h2>• Each year, 840,000 children in the US go missing.</h2>
+
+      <h2>• We decided to target colleges and universities because there are many people.</h2>
+
+      <h2>• There are also other main problems that are specific to colleges and universities.</h2>
+
     </div>
-
 
     <div id="pageTwo">
+
       <h3>Thank you very much for contacting us!</h3>
+
       <button onclick="back()">Return</button>
+
     </div>
 
-    <script>
-      var Name = document.getElementById("name");
-      var Email = document.getElementById("email");
-      var Subject = document.getElementById("subject");
-      
-      function info(name, email, subject) {
-        var returnObject = {
-          name: name.value,
-          subject: subject.value,
-          email: email.value
-        }
-        return returnObject
-      }
-      
-      function submitted() {
-        var infoReturnedObject = info(Name, Email, Subject)
-        console.log("Your name is: " + infoReturnedObject.name)
-        console.log("Your e-mail is: " + infoReturnedObject.email)
-        console.log("The issue is: " + infoReturnedObject.subject)
-        document.getElementById('pageOne').style.display = 'none';
-        document.getElementById('pageTwo').style.display = 'block';
-      }
-      
-      function back() {
-        document.getElementById('pageOne').style.display = 'block';
-        document.getElementById('pageTwo').style.display = 'none';
-      }
-    </script>
-
-    
   </body>
+
 </html>
+
+<!-- increase font size in banner-->
